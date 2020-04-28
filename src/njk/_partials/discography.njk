@@ -1,0 +1,13 @@
+<div>
+    <ul class="list-unstyled">
+      {% for disc in queen.discography%}
+      <li class="media">
+        <img src="img/discs/{{ disc.image }}" class="mr-3"  alt="...">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">{{ disc.title }}</h5>
+          {{ disc.year }}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
