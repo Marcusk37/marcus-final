@@ -1,34 +1,12 @@
 <div class="row">
-      <div class="card" style="width: 15rem;">
-        <img src="img/members/brian-may-color.jpg" class="img-fluid" alt="...">
+  {% for member in queen.members %}
+      <div class="col-sm-3">
+        <img src="img/members/{{ member.imagebw }}" class="img-fluid" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Brian May</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">{{ member.name }}</h5>
+          <p class="card-text">Played the {{ member.instruments }} from {{ member.tenure }} </p>
+          <a href="#" class="btn btn-primary">{{ member.name }}'s page</a>
         </div>
       </div>
-      <div class="card" style="width: 15rem;">
-        <img src="img/members/freddie-mercury-color.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Freddie Mercury</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img src="img/members/john-deacon-color.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">John Deacon</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img src="img/members/roger-taylor-color.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Roger Taylor</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
+      {% endfor %}
+</div>
