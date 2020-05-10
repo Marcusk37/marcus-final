@@ -1,5 +1,10 @@
 /* nav */
 
 .navbar {
-  margin-bottom: 20px;
+  background-color: #24b5da;
+  font-family: 'Racing Sans One', 'Franklin Gothic Medium', 'Arial Narrow';
 }
+
+  .navbar-brand:hover {
+    text-decoration: underline;
+  }

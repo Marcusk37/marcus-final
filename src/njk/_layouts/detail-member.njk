@@ -7,18 +7,18 @@
 {% block content %}
 <article class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-md-4">
       {% block info %}
-        <img src="../img/members/{{ member.imagebw }}" alt="" class="img-fluid">
+        <img src="img/members/{{ member.imagebw }}" alt="" class="img-fluid">
         <p>{{ member.instruments }}</p>
         <p>{{ member.tenure }}</p>
       {% endblock %}
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-12 col-md-8">
       {% block blurb %}
         <h1>{{ member.name }}</h1>
         <h3>{{ member.birthplace }}, {{ member.birthdate }}</h3>
-        <p>{{ member.text }}</p>
+        <p>{{ member.text | safe }}</p>
       {% endblock %}
     </div>
   </div>

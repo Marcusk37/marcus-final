@@ -1,16 +1,16 @@
 {% extends '_layouts/base.njk' %}
 
-{% block page_title %}New index page title{% endblock %}
+{% block page_title %}Queen{% endblock %}
 
-{% block page_description %}The search description for this page goes here.{% endblock %}
+{% block page_description %}Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.{% endblock %}
 
 {% block content %}
 <div class="container">
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-md-5">
       <img src="img/queen-band-early.jpg" class="img-fluid">
     </div>
-    <div class="col-sm-7">
+    <div class="col-md-7">
       <h1 class="mainheadline">Queen: a history</h1>
       <p>Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.</p>
 
@@ -21,6 +21,12 @@
   {% include "_partials/cards.njk" %}
 
   {% include "_partials/discography.njk"%}
+
+  <iframe title="Queen's top hits" aria-label="chart" id="datawrapper-chart-12XEr" src="https://datawrapper.dwcdn.net/12XEr/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500"></iframe>
+  <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+  </script>
+
+ {% include "_partials/tour.njk" %}
 
 </div>
 {% endblock %}
